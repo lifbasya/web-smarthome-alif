@@ -266,7 +266,7 @@ body {
 .hero-image {
     width: 1084px;
     position: absolute;
-    top: 320px; /* geser sesuai tinggi header kamu */
+    top: 250px; /* geser sesuai tinggi header kamu */
     left: 50%;
     transform: translateX(-50%);
     max-width: 80%;
