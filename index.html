@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart Home</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
                 <a href=""><li>Testimonials</li></a>
             </ul>
             <img src="./image/Logo.svg" alt="Logo">
-            <a href=""><button>Download App</button></a>
+            <a href=""><button class="hover">Download App</button></a>
         </nav>
         <div class="text">
             <h1>Take Full Control of Your Home</h1>
@@ -45,7 +45,7 @@
                 <div class="text">
                     <h4>Everything You Need, Smarter Than Ever</h4>
                     <p>Track today’s energy use, check temperature, view device status, and keep an eye on what’s on — all in one intuitive dashboard.</p>
-                    <a href=""><button>Learn More</button></a>
+                    <a href=""><button class="hover">Learn More</button></a>
                 </div>
             </div>
             <div class="myroom">
@@ -53,7 +53,7 @@
                 <div class="text">
                     <h4>Make Your Devices Work for You</h4>
                     <p>From lights to air conditioners, the app transforms ordinary appliances into smart ones — programmable, responsive, and more energy-efficient.</p>
-                    <a href=""><button>Learn More</button></a>
+                    <a href=""><button class="hover">Learn More</button></a>
                 </div>
             </div>
             <div class="energy">
@@ -61,7 +61,7 @@
                 <div class="text">
                     <h4>Tap. Control. Relax.</h4>
                     <p>Turn off forgotten devices, schedule your lighting, or monitor active appliances in each room. Stay in control whether you're home or away.</p>
-                    <a href=""><button>Learn More</button></a>
+                    <a href=""><button class="hover">Learn More</button></a>
                 </div>
             </div>
         </section>
@@ -100,54 +100,51 @@
                 </div>
             </div>
         </section>
-        <section class="FAQ">
-            <h3>FAQ’s</h3>
-            <div class="container">
-                <div class="question">
-                    <img src="./image/plus.png" alt="">
-                    <p>Do I need special devices to use the app</p>
+        <section class="faq-section">
+            <h2 class="faq-title">FAQ’s</h2>
+        
+            <div id="faq" class="faq-list">
+              <div class="faq-item">
+                <button class="faq-toggle">
+                  <span class="faq-question">Do I need special devices to use the app</span>
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer hidden">
+                  Most smart plugs or appliances will work. No complex setup required.
                 </div>
-                <div class="answer">
-                    <div class="col-1">
-                        <img src="./image/minus.png" alt="">
-                        <p>Can I control my home when I'm not there?</p>
-                    </div>
-                    <div class="col-2">
-                        <p>Absolutely! As long as you have internet, full control is in your hands.</p>
-                    </div>
+              </div>
+        
+              <div class="faq-item">
+                <button class="faq-toggle">
+                  <span class="faq-question">Can I control my home when I'm not there?</span>
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer hidden">
+                  Absolutely! As long as you have internet, full control is in your hands.
                 </div>
+              </div>
+        
+              <div class="faq-item">
+                <button class="faq-toggle">
+                  <span class="faq-question">How do I track power consumption?</span>
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer hidden">
+                  You can view detailed usage insights in the “Analytics” tab on the home screen.
+                </div>
+              </div>
+        
+              <div class="faq-item">
+                <button class="faq-toggle">
+                  <span class="faq-question">Is the app free?</span>
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer hidden">
+                  Yes, the core app is completely free to use with optional premium features.
+                </div>
+              </div>
             </div>
-            <div class="container">
-                <div class="question">
-                    <img src="./image/plus.png" alt="">
-                    <p>Do I need special devices to use the app</p>
-                </div>
-                <div class="answer">
-                    <div class="col-1">
-                        <img src="./image/minus.png" alt="">
-                        <p>Can I control my home when I'm not there?</p>
-                    </div>
-                    <div class="col-2">
-                        <p>Absolutely! As long as you have internet, full control is in your hands.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="question">
-                    <img src="./image/plus.png" alt="">
-                    <p>Do I need special devices to use the app</p>
-                </div>
-                <div class="answer">
-                    <div class="col-1">
-                        <img src="./image/minus.png" alt="">
-                        <p>Can I control my home when I'm not there?</p>
-                    </div>
-                    <div class="col-2">
-                        <p>Absolutely! As long as you have internet, full control is in your hands.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </section>
         <section class="subscribe">
             <div class="download-subscribe">
                 <div class="text">
@@ -170,7 +167,7 @@
                 <p>Get tips, new feature alerts, and updates. Straight to your inbox.</p>
                 </div>
                 <div class="button-start">
-                <a href=""><button>Get start</button> </a>  
+                <a href=""><button class="hover">Get start</button> </a>  
                 </div>
                     
             </div>
@@ -181,7 +178,7 @@
                 <p>Monitor energy use, automate routines, and manage your home appliances effortlessly, all from one sleek, simple app.</p>
                 <div class="register">
                     <input type="email" placeholder="Email Address">
-                    <button>Register</button>
+                    <button class="hover">Register</button>
                 </div>
             </div>
             <div class="list">
@@ -223,6 +220,33 @@
                 socialBar.classList.remove('blue');
             }
         });
+
+        const faqToggles = document.querySelectorAll(".faq-toggle");
+
+faqToggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const answer = toggle.nextElementSibling;
+    const icon = toggle.querySelector(".icon");
+    const isOpen = !answer.classList.contains("hidden");
+
+    // Tutup semua dulu
+    document.querySelectorAll(".faq-answer").forEach((a) => a.classList.add("hidden"));
+    document.querySelectorAll(".icon").forEach((i) => {
+      i.textContent = "+";
+      i.classList.remove("text-red-500");
+      i.classList.add("text-purple-800");
+    });
+
+    // Kalau sebelumnya tertutup, buka
+    if (!isOpen) {
+      answer.classList.remove("hidden");
+      icon.textContent = "−";
+      icon.classList.remove("text-purple-800");
+      icon.classList.add("text-red-500");
+    }
+  });
+});
+
     </script>
 </body>
 </html>
